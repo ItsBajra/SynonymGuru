@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+    background-color: #ffffff;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    display: flex;
+}
+.logo a{
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+
+}
+.nav-links {
+    display: flex;
+}
+.nav-links li a{
+    list-style: none;
+    font-weight: 300;
+    margin-right: 40px;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+}
+.nav-links li:last-child {
+    margin-right: 0;
+}
+.entry-container {
+    text-align: center;
+    margin-top: 50px;
+    font-family: "Poppins", sans-serif;
+}
+
+
+.entry-box {
+    padding: 10px;
+    width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-right: 10px;
+    font-family: "Poppins", sans-serif;
+    margin-top: 60px;
+    box-shadow: 1.8px 1.8px black;
+}
+
+.entry-box:hover {
+    border-color:#44b448;
+}
+
+.synonym-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    box-shadow: 1.8px 1.8px black;
+}
+
+.synonym-button:hover {
+    background-color:#81f584;
+}
+
+.synonym-list { 
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    max-width: 550px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 1.8px 1.8px black;
+}
+
+/* Splash Screen Part */
+
+.intro {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #161616;
+    transition: 1s;
+}
+
+.logo-header {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+}
+
+.intro-logo {
+    position: relative;
+    display: inline-block;
+    bottom: -20px;
+    opacity: 0;
+}
+
+.intro-logo.active{
+    bottom: 0;
+    opacity: 1;
+    transition: ease-in-out 0.5s;
+}
+
+.intro-logo.fade{
+    bottom: 150px;
+    opacity: 0;
+    transition: ease-in-out 0.5s;
+}
