@@ -5,14 +5,18 @@
     font-family: "Poppins", sans-serif;
 }
 
+body {
+    background: linear-gradient(to right, #2A5470   , #4C4177);
+}
+
 .navbar {
-    background-color: #ffffff;
-    color: #fff;
+    background: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 30px;
     display: flex;
+    
 }
 .logo a{
     font-size: 18px;
@@ -24,6 +28,11 @@
 .nav-links {
     display: flex;
 }
+
+.nav-links li{
+    list-style-type: none;
+}
+
 .nav-links li a{
     list-style: none;
     font-weight: 300;
@@ -31,10 +40,13 @@
     font-size: 16px;
     color: black;
     text-decoration: none;
+    
 }
+
 .nav-links li:last-child {
     margin-right: 0;
 }
+
 .entry-container {
     text-align: center;
     margin-top: 50px;
@@ -73,6 +85,7 @@
 }
 
 .synonym-list { 
+    background-color: #fff;
     margin-top: 20px;
     padding: 10px;
     border: 1px solid #ccc;
@@ -83,6 +96,28 @@
     margin-right: auto;
     box-shadow: 1.8px 1.8px black;
 }
+
+.synonym-list:hover {
+    border-color: #44b448;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 5px 0;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-size: 10px;
+}
+
+footer p {
+    margin: 0;
+}
+
+
 
 /* Splash Screen Part */
 
