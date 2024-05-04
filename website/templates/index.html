@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SynonymGuru</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+
+</head>
+<body>
+    <div class="intro">
+        <h1 class="logo-header">
+            <span class="intro-logo">Synonym</span><span class="intro-logo">Guru</span>
+        </h1>
+    </div>
+    <div class="navbar">
+        <div class="logo"><a href="{{url_for('views.home')}}">SynonymGuru</a></div>
+        <ul class="nav-links">
+            <li><a href="{{url_for('views.aboutus')}}">About Us</a></li>
+            <li><a href="{{url_for('views.contactus')}}">Contact Us</a></li>
+            <li><a href="#">Socials</a></li>
+        </ul>
+    </div>
+    <div class="entry-container">
+        <input type="text" class="entry-box" placeholder="Enter a word">
+        <button class="synonym-button">Get Synonyms</button>
+        <div class="synonym-list" id="synonymList"></div>
+    </div>
+
+    <footer>
+        <p>By Team Random Forest</p>
+    </footer>
+
+    <script src="{{url_for('static', filename='app.js')}}"></script>
+</body>
+</html>
